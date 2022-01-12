@@ -1,28 +1,22 @@
 import Navigo from "navigo";
+import AboutPage from "./pages/about";
+import HomePage from "./pages/home";
 
-const router = new Navigo("/");
+const router = new Navigo("/", { linksSelector: "a" });
 
-function render(content) {
-    document.getElementsByClassName("container").innerHTML = content;
-}
+const print = (content) => {
+    document.getElementById("content").innerHTML = content;
+};
 
-// const render = (content) => {
-//     document.getElementsByid("test").innerHTML = content;
-// };
-
-// router.on("/", function(){
-//     console.log('Home Page')
-// });
-// router.resolve();
 router.on({
     "/": () => {
-        render("Home page");
+        print(HomePage.render());
     },
-    "/about": () => {
-        render("<h1>tin tuc hoc tap</h1>");
+    "/tuyensinh": () => {
+        print(AboutPage.render());
     },
-    "/test": () => {
-        render("<h1>hoc tap</h1>");
+    "/daotao": () => {
+        
     },
 });
 router.resolve();

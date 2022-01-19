@@ -6,7 +6,6 @@ import NewsPage from "./pages/news";
 import DetailNewsPage from "./pages/details";
 import SignIn from "./pages/signin";
 import SignUp from "./pages/signup";
-import DashBoard from "./admin/dashboard";
 import AddNews from "./admin/add";
 import EditNews from "./admin/edit";
 import NewsListAdmin from "./admin/news";
@@ -46,9 +45,6 @@ router.on({
     "/admin/dashboard": () => {
         print(NewsListAdmin.render());
     },
-    // "/admin/news": () => {
-    //     print(NewsList.render());
-    // },
     "/admin/news/:id/edit": ({ data }) => {
         const { id } = data;
         print(EditNews.render(id));

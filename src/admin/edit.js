@@ -1,8 +1,8 @@
 import data from "../data";
 const EditNews = {
-    render(id) {
-        const result = data.find((post) => post.id === id);
-        return `<div class="md:grid md:grid-cols-3 md:gap-6 mt-20">
+  render(id) {
+    const result = data.find((post) => post.id === id);
+    return /*html*/ `<div class="md:grid md:grid-cols-3 md:gap-6 mt-20">
         <div class="md:col-span-1">
           <div class="px-4 sm:px-0">
             <h3 class="text-lg font-medium leading-6 text-gray-900">Edit News</h3>
@@ -76,7 +76,7 @@ const EditNews = {
         </div>
       </div>
     </div>`;
-    },
+  },
 };
 
 export default EditNews;

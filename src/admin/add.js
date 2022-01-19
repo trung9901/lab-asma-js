@@ -1,6 +1,6 @@
 const AddNews = {
     render() {
-        return `<div class="md:grid md:grid-cols-3 md:gap-6 mt-20">
+        return /* html */`<div class="md:grid md:grid-cols-3 md:gap-6 mt-20">
         <div class="md:col-span-1">
           <div class="px-4 sm:px-0">
             <h3 class="text-lg font-medium leading-6 text-gray-900">Add News</h3>

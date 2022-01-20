@@ -1,0 +1,7 @@
+const signin = {
+    render() {
+        return `
+            
+        `;
+    },
+};

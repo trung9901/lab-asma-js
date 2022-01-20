@@ -21,4 +21,3 @@ router.on({
     "/admin/news/add": () => print(AdminNewsAddPage),
 });
 router.resolve();
-

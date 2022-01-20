@@ -9,8 +9,6 @@ const DetailNewsPage = {
                 <img src="${data.img}" />    
                 <p>${data.desc}</p>
             `);
-
-        // const result = data.find((post) => post.id === id);
     },
 };
 export default DetailNewsPage;
